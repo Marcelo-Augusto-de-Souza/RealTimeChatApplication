@@ -26,8 +26,9 @@ public class ChatController : ControllerBase
     }
 
     [HttpGet("list")]
-    public IActionResult List()
+    public IActionResult List(int clientId)
     { 
+        _clientManager.UpdateLastActivity(clientId);
         var client_list = _clientManager.GetAllClients();
         return Ok(new {client_list});
     }
@@ -81,7 +82,9 @@ public class ChatController : ControllerBase
         Console.WriteLine($"{targetClientId} messages");
         Console.WriteLine("Estamos Aqui!!!");
         var messages = await LoadMessagesFromDatabase(clientId, targetClientId);
-        return Ok(new { messages });
+        var cliente  = _clientManager.GetClient(targetClientId);
+        
+        return Ok(new { messages, cliente });
     }
 
     private static async Task<List<Message>> LoadMessagesFromDatabase(int clientId, int targetClientId)

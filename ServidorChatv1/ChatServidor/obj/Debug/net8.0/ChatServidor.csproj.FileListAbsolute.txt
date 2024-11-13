@@ -100,3 +100,4 @@ D:\Projetos de Programação!!!\Projetos Web\AppChat\ServidorChatv1\ChatServidor
 D:\Projetos de Programação!!!\Projetos Web\AppChat\ServidorChatv1\ChatServidor\obj\Debug\net8.0\ChatServidor.pdb
 D:\Projetos de Programação!!!\Projetos Web\AppChat\ServidorChatv1\ChatServidor\obj\Debug\net8.0\ChatServidor.genruntimeconfig.cache
 D:\Projetos de Programação!!!\Projetos Web\AppChat\ServidorChatv1\ChatServidor\obj\Debug\net8.0\ref\ChatServidor.dll
+D:\Projetos de Programação!!!\Projetos Web\AppChat\ServidorChatv1\ChatServidor\obj\Debug\net8.0\ChatServidor.sourcelink.json

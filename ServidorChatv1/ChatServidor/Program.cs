@@ -27,7 +27,7 @@ public class Program
                     });
 
                     services.AddSingleton<ClientManager>(); // Register ClientManager as a singleton
-                    services.AddScoped<ClientMonitorService>(); // Register the background service if needed
+                    services.AddHostedService<ClientMonitorService>(); // Register the background service if needed
                     services.AddControllers(); // Add controller support for API endpoints
                 });
 
